@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 main {
     background-color: yellow;
     height: calc(100vh - 80px);
@@ -24,19 +24,33 @@ li {
     margin: 0 10px;
     color: white;
 }
-.container {
-    max-width: 1200px;
+.container.m {
+    max-width: 1400px;
     margin: 0 auto;
 }
 .row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .col.m {
     width: calc(100vw / 7);
+    min-width: 100px;
 }
 .content.m {
     margin: 10px;
-    border: 1px solid black;
-    
+    aspect-ratio: 16 / 9;
+    position: relative;
+}
+img, .content.m {
+    width: calc(100vw / 7);
+    height: 140px;
+}
+.user {
+    padding: 5px;
+    color: white;
+    background-color: gray;
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
 }

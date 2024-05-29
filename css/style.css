@@ -5,37 +5,59 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 main {
-    background-color: yellow;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 110px);
     overflow-y: auto;
+}
+.row.h {
+    justify-content: flex-end;
+}
+.col.h {
+    height: 30px;
+}
+.content.h span {
+    background-color: gray;
+    padding: 5px;
 }
 footer {
     background-color: black;
     height: 80px;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 ul {
     list-style-type: none;
+    text-align: center;
 }
 li {
     display: inline-block;
     margin: 0 10px;
     color: white;
 }
-.container.m {
+.fa-caret-down {
+    font-size: 15px;
+    margin: 3px;
+}
+.col.f.left, .col.f.right {
+    width: 20vw;
+}
+.col.f.medium {
+    width: 60vw;
+}
+.container {
     max-width: 1400px;
     margin: 0 auto;
 }
 .row {
     display: flex;
     flex-wrap: wrap;
+}
+.row.m, .row.f {
     justify-content: center;
 }
 .col.m {
     width: calc(100vw / 7);
     min-width: 100px;
+    margin: 5px;
 }
 .content.m {
     margin: 10px;

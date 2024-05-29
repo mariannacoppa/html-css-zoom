@@ -45,6 +45,10 @@ li {
     margin: 0 10px;
     color: white;
 }
+li div {
+    font-size: 10px;
+}
+
 .fa-caret-down {
     font-size: 15px;
     margin: 3px;

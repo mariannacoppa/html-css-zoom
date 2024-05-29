@@ -3,3 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+main {
+    background-color: yellow;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+}
+footer {
+    background-color: black;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col.m {
+    width: calc(100vw / 7);
+}
+.content.m {
+    margin: 10px;
+    border: 1px solid black;
+    
+}

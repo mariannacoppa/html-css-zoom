@@ -8,15 +8,27 @@ main {
     height: calc(100vh - 110px);
     overflow-y: auto;
 }
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
 .row.h {
     justify-content: flex-end;
 }
 .col.h {
     height: 30px;
+    display: flex;
+    align-items: center;
 }
 .content.h span {
     background-color: gray;
+    color: white;
     padding: 5px;
+    top: 3px;
 }
 footer {
     background-color: black;
@@ -37,19 +49,17 @@ li {
     font-size: 15px;
     margin: 3px;
 }
+.fa-share-from-square {
+    color: rgb(2, 183, 2);
+}
 .col.f.left, .col.f.right {
     width: 20vw;
 }
 .col.f.medium {
     width: 60vw;
 }
-.container {
-    max-width: 1400px;
-    margin: 0 auto;
-}
-.row {
-    display: flex;
-    flex-wrap: wrap;
+.col.f.right li {
+    color: red;  
 }
 .row.m, .row.f {
     justify-content: center;
